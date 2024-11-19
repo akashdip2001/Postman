@@ -133,4 +133,6 @@ This chapter felt like opening a treasure chest of information—my first API re
    }
 ]
 ```
+| [All GET requestes](get books.json) |
+| --- |
 
