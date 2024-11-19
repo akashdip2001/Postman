@@ -209,3 +209,62 @@ Filtering data by genre was like flipping through the pages of a library catalog
 ![Screenshot (232)](https://github.com/user-attachments/assets/e4fa7536-535b-4860-917d-2618e86efc98)
 ![Screenshot (233)](https://github.com/user-attachments/assets/f58804b8-e201-41a4-b6a0-d0f31500057e)
 
+---
+
+# **Chapter 3: Sending Data with POST – *Adding a Book to the Library***  
+
+This chapter introduced me to the **POST** method, which allows us to send data to an API. My task was to add a new book to the library by sending structured data in the request body. Here's what I learned and did:  
+
+---
+
+### 🌟 **What I Learned**:  
+1. **What is the Body?**  
+   - The **Body** is used to send structured data (e.g., JSON) with requests to create or update resources.  
+   - It is commonly used with **POST**, **PUT**, and **PATCH** methods.  
+
+![Screenshot (234)](https://github.com/user-attachments/assets/bc66a6e8-0ccb-4486-9f9d-67dbf9414970)
+![Screenshot (235)](https://github.com/user-attachments/assets/72638642-2c8b-4426-80a7-166d15019d0f)
+
+2. **JSON Format for Body Data**:  
+   - The data must be structured in **key-value pairs** like this:  
+     ```json
+     {
+       "title": "To Kill a Mockingbird",
+       "author": "Harper Lee",
+       "genre": "fiction",
+       "yearPublished": 1960
+     }
+     ```
+     
+![Screenshot (236)](https://github.com/user-attachments/assets/254af363-f430-4f87-8bda-94f6bf8d05a2)
+
+3. **Using Postman's Body Tab**:  
+   - Select the **Body** tab in Postman.  
+   - Choose **raw** as the data format and set the type to **JSON** for syntax highlighting.  
+
+4. **API Key Authorization**:  
+   - Learned about the importance of including an **api-key** in the headers for authorization to avoid a `401 Unauthorized` error.  
+
+---
+
+### 🛠 **Task Completed**:  
+1. **Created the "add book" Request**:  
+   - **Method**: POST  
+   - **URL**: `{{baseUrl}}/books`  
+   - **Body**: Added the book data in JSON format.  
+
+2. **Sent the Request**:  
+   - Initially received a **401 Unauthorized** response.  
+   - This error taught me that APIs often require authentication to ensure secure access.  
+
+---
+
+### 📝 **Takeaways**:  
+- POST requests allow us to **create new resources** by sending data in the request body.  
+- Structured data like JSON is essential for adding information in a format that APIs can understand.  
+- Errors like **401 Unauthorized** highlight the need for proper **authentication**, which I'll address in the next lesson.  
+
+This chapter felt like adding a personal favorite book to the shelves of an ever-growing library—what an exciting moment! 📖✨
+
+---
+
