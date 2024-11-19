@@ -373,3 +373,65 @@ It was rewarding to see how we could capture data programmatically—like being 
 ### 📘 **Next Steps**  
 - Use this `id` in future operations, like retrieving, updating, or deleting this specific book.  
 - Continue exploring how Postman handles variables and scripting for automating these tasks! 😊
+
+---
+---
+
+Here’s a summary of how you can **grab the new book ID** and save it as a variable:
+
+---
+
+### **Steps to Save the Book ID as a Collection Variable**
+1. **Change the Book Details in the Body Tab**  
+   - Go to the **Body tab** of the "add a book" request.  
+   - Replace the book details with information about a new book you'd like to add.
+
+   Example JSON:
+   ```json
+   {
+     "title": "The Mysteries of Space",
+     "author": "Akashdip Mahapatra",
+     "genre": "Astronomy",
+     "yearPublished": 2024
+   }
+   ```
+
+2. **Add the Script to Save the Book ID**  
+   - Open the **Post-response tab** in the **Scripts section** of the "add a book" request.  
+   - Replace the `console.log()` statement with the following code:
+     ```javascript
+     // Save the "id" value from the response to a local variable named "id"
+     const id = pm.response.json().id;
+
+     // Save the "id" as a collection variable named "id"
+     pm.collectionVariables.set("id", id);
+     ```
+![Screenshot (245)](https://github.com/user-attachments/assets/34af0bfa-306c-4db0-9c9a-1ded9c872fe2)
+
+3. **Save and Send the Request**  
+   - Save your changes.  
+   - Click **Send** to execute the request.
+
+![Screenshot (246)](https://github.com/user-attachments/assets/b4dcb739-0b08-42ff-bc80-80c7e289b370)
+
+4. **Verify the Variable is Set**  
+   - After the request completes successfully (with a `201 Created` status), the script will run, saving the book’s `id` into a collection variable.  
+   - To confirm:
+     - Click your **Postman Library API v2 collection**.
+     - Go to the **Variables tab**.
+     - Look for a variable named `id` under **Current Value**. Its value should match the `id` from the response.
+
+---
+
+### **Example of How the ID Variable Works**
+You can now use `{{id}}` in subsequent requests within the same collection. For example:
+- To retrieve the book by ID:  
+  **GET** `https://library-api.postmanlabs.com/books/{{id}}`
+
+![Screenshot (248)](https://github.com/user-attachments/assets/cf1cfca0-6e10-4d29-bfcb-422b28e566e5)
+![Screenshot (249)](https://github.com/user-attachments/assets/4f428542-90a6-4fd7-97a4-c0cedae76d83)
+
+---
+
+### **Next Steps**
+With this automation in place, you’re ready to use the stored `id` variable in future tasks like updating, deleting, or checking out the book. Keep going—you’re doing great! 😊
