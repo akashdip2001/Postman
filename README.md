@@ -138,7 +138,59 @@ This chapter felt like opening a treasure chest of information—my first API re
 
 ---
 
-# **Chapter 2: Request Parameters – Variables in Postman**
+# **Chapter 2: Request Parameters – *Using Query Parameters to Filter Results***  
+## Variables in Postman
+
+In this step, I learned about **query parameters** and how they allow us to refine API requests by adding filters or extra data. Here's what I did:  
+
+---
+
+### 🌟 **What I Learned**:
+1. **What are Query Parameters?**  
+   - Query parameters are **key-value pairs** added to the end of the request URL.  
+   - Syntax:  
+     ```
+     <base_url>?<key1>=<value1>&<key2>=<value2>
+     ```
+   - They allow for dynamic filtering, as seen in:  
+     ```
+     GET https://some-api.com/photos?orientation=landscape&size=500x400
+     ```
+
+2. **Practical Example**:  
+   - A Google search query like `q=postman` in the URL:  
+     ```
+     https://www.google.com/search?q=postman
+     ```
+     uses a query parameter (`q`) to return results for "Postman."
+
+3. **When to Use Query Parameters**:
+   - To filter, sort, or add optional data to responses.
+   - Reading the **API documentation** is key to understanding which parameters are available.
+
+---
+
+### 🛠 **Task Completed**:
+1. **Filtered Fiction Books**:  
+   - I duplicated the `get books` request in Postman, renamed it `get fiction books`, and added a query parameter:  
+     - **Key**: `genre`  
+     - **Value**: `fiction`  
+   - Postman updated the request URL automatically:  
+     ```
+     https://library-api.postmanlabs.com/books?genre=fiction
+     ```
+
+2. **Sent the Request**:
+   - I clicked **Send** and received a **200 OK** response with an array of books, but this time, only those in the "fiction" genre.  
+
+---
+
+### 📝 **Takeaways**:
+- **Query Parameters** are a powerful way to customize API requests.  
+- Postman’s **Params tab** makes it easy to add and manage query parameters visually.
+- This exercise emphasized the importance of **API documentation** in discovering parameter options.  
+
+Filtering data by genre was like flipping through the pages of a library catalog to find the exact shelf I needed. Onward to the next chapter! 📚✨
 
 ![Screenshot (220)](https://github.com/user-attachments/assets/5a3cd88e-41f0-4653-8bcb-8eca280ea708)
 ![Screenshot (222)](https://github.com/user-attachments/assets/41a5fa19-8f76-41fe-803b-1da4c8ba5e40)
