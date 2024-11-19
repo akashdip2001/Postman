@@ -266,5 +266,7 @@ This chapter introduced me to the **POST** method, which allows us to send data 
 
 This chapter felt like adding a personal favorite book to the shelves of an ever-growing library—what an exciting moment! 📖✨
 
+![Screenshot (238)](https://github.com/user-attachments/assets/e82661d2-1076-48c9-85dd-18777e7b6e74)
+
 ---
 
