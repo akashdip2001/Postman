@@ -118,3 +118,19 @@ This chapter felt like opening a treasure chest of information—my first API re
 | **Response Format** | JSON                                             | 
 
 **Congratulations!** You’ve successfully retrieved a list of books using an API request. 🎉
+
+```json
+[
+    {
+        "id": "613fc957-d07b-42b3-b9d7-553eccb47f40",
+        "title": "The Prince",
+        "author": "Mchiavelli",
+        "genre": "fiction",
+        "yearPublished": 1513,
+        "checkedOut": true,
+        "isPermanentCollection": false,
+        "createdAt": "2024-11-19T20:30:01.863Z"
+   }
+]
+```
+
