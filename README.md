@@ -229,11 +229,11 @@ This chapter introduced me to the **POST** method, which allows us to send data 
    - The data must be structured in **key-value pairs** like this:  
      ```json
      {
-       "title": "To Kill a Mockingbird",
-       "author": "Harper Lee",
-       "genre": "fiction",
-       "yearPublished": 1960
-     }
+     "title": "What is Time ??",
+     "author": "Akashdip Mahapatra",
+     "genre": "Physics",
+     "yearPublished": 2024
+      }
      ```
      
 ![Screenshot (236)](https://github.com/user-attachments/assets/254af363-f430-4f87-8bda-94f6bf8d05a2)
