@@ -266,7 +266,15 @@ This chapter introduced me to the **POST** method, which allows us to send data 
 
 This chapter felt like adding a personal favorite book to the shelves of an ever-growing library—what an exciting moment! 📖✨
 
+### Give Auth on a Request
+
 ![Screenshot (238)](https://github.com/user-attachments/assets/e82661d2-1076-48c9-85dd-18777e7b6e74)
+
+### Give Auto on full Folder
+
+![Screenshot (239)](https://github.com/user-attachments/assets/fdb7f4ca-d3f6-4555-95f1-7af9a1191ef1)
+![Screenshot (240)](https://github.com/user-attachments/assets/6802e9e8-f12c-4f5e-aee6-a88e6e2ec311)
+![Screenshot (241)](https://github.com/user-attachments/assets/cb726d8b-6bb3-44aa-8f4c-8d6edc73fbbd)
 
 ---
 
