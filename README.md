@@ -278,3 +278,98 @@ This chapter felt like adding a personal favorite book to the shelves of an ever
 
 ---
 
+# **Chapter 4: Introduction to Variables and Scripting – *Logging Data from the API***  
+
+In this chapter, I learned how to use **JavaScript scripting** within Postman to interact with API responses. Here's what I did and learned:  
+
+---
+
+### 🌟 **What I Learned**:  
+
+1. **JavaScript Basics in Postman**:  
+   - **Logging data**:  
+     - Used `console.log()` to print data to the console:  
+       ```javascript
+       console.log("Hello world!")
+       ```  
+   - **Comments**: Added explanations in the script to make it readable:  
+     ```javascript
+     // This is a single-line comment  
+     /* This is a  
+        multi-line comment */
+     ```  
+
+2. **Postman Scripting Environment**:  
+   - Postman allows us to write scripts in the **Pre-request** and **Post-response (Tests)** tabs for automation and response handling.  
+
+3. **Using `pm` Object**:  
+   - `pm` is a global Postman object that provides functions to interact with requests and responses.  
+   - For example:  
+     ```javascript
+     console.log(pm.response.json())
+     ```  
+     This extracts and logs the response JSON from the API.  
+
+4. **Postman Console**:  
+   - Located in the lower-left corner, it allows viewing logs, errors, and raw request-response cycles.  
+
+---
+
+### 🛠 **Task Completed**:  
+
+1. **Updated the "add a book" Request**:  
+   - Changed the body data to add a new book:  
+     ```json
+     {
+       "title": "The Great Gatsby",
+       "author": "F. Scott Fitzgerald",
+       "genre": "fiction",
+       "yearPublished": 1925
+     }
+     ```  
+
+2. **Added a Script**:  
+   - Opened the **Tests tab** and wrote a script to log the API response:  
+     ```javascript
+     console.log(pm.response.json())
+     ```  
+
+3. **Sent the Request**:  
+   - Observed the new book being added successfully.  
+   - Opened the **Postman Console** to view the JSON response logged by the script.  
+
+---
+
+### 📝 **Takeaways**:  
+- **Scripts in Postman** enhance automation by processing data dynamically.  
+- Logging with `console.log()` is a powerful way to debug and inspect API responses.  
+- Postman Console is a great tool for tracking request and script execution.  
+
+It was rewarding to see how we could capture data programmatically—like being the librarian who documents each new arrival in the library! 📚✨
+
+![Screenshot (244)](https://github.com/user-attachments/assets/82ab7577-ed59-4caf-a0a2-d3ad17ee1440)
+
+---
+
+### **Response Details**  
+- **ID**: `04cd01e2-29ee-42f2-93b3-c41c0e71bb90`  
+- **Title**: `"What is Time ??"`  
+- **Author**: `"Akashdip Mahapatra"`  
+- **Genre**: `"Physics"`  
+- **Year Published**: `2024`  
+- **Checked Out**: `false` (The book is not checked out yet.)  
+- **Permanent Collection**: `false` (It's not part of a permanent collection.)  
+- **Created At**: `"2024-11-19T22:34:49.814Z"` (Date and time when the book was added.)  
+
+---
+
+### 🎯 **Achievement**  
+- **HTTP Status Code**: `201 Created`  
+  - Indicates that the book was successfully added to the library database.  
+- The server returned all the details of the newly created book entry, including a unique `id` to reference this book in future requests.
+
+---
+
+### 📘 **Next Steps**  
+- Use this `id` in future operations, like retrieving, updating, or deleting this specific book.  
+- Continue exploring how Postman handles variables and scripting for automating these tasks! 😊
