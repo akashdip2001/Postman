@@ -1,6 +1,6 @@
 # Postman
 
-**Chapter 1: Your First API Request – *Getting Books from the Library API***  
+# **Chapter 1: Your First API Request – *Getting Books from the Library API***  
 
 In this step of my Postman journey, I learned how to make my **first API request** to retrieve all books in a library catalog. Here's how it unfolded:  
 
@@ -135,4 +135,12 @@ This chapter felt like opening a treasure chest of information—my first API re
 ```
 | [View All GET Requests](get%20books.json) |
 | --- |
+
+---
+
+# **Chapter 2: Request Parameters – Variables in Postman**
+
+![Screenshot (220)](https://github.com/user-attachments/assets/5a3cd88e-41f0-4653-8bcb-8eca280ea708)
+![Screenshot (222)](https://github.com/user-attachments/assets/41a5fa19-8f76-41fe-803b-1da4c8ba5e40)
+![Screenshot (225)](https://github.com/user-attachments/assets/d5fcdd10-0721-49e5-bfcd-cb4e06741066)
 
