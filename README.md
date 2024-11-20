@@ -792,7 +792,7 @@ The variable `{{submission}}` must already contain a **public JSON link** to you
    - Paste the following JSON:
      ```json
      {
-       "email": "akashdip.mahapatra.21@aot.edu.in",
+       "email": "akashdip...@aot.edu.in",
        "postmanCollectionJsonUrl": "{{submission}}",
        "publishedCourseId": "2q2jokzsn62y8",
        "lessonId": "go6mgkytvk8u"
