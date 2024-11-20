@@ -1,4 +1,4 @@
-<img align="right" alt="python_logo" width="300" src="https://github.com/user-attachments/assets/3d0e35e2-bcca-4042-a6c7-11380c5729bb">
+[<img align="right" alt="python_logo" width="300" src="https://github.com/user-attachments/assets/3d0e35e2-bcca-4042-a6c7-11380c5729bb">](https://postmanstudent.notion.site/GGSOC-Postman-API-Fundamentals-Student-Expert-821795dd2e3f493586f713d2168d1c33)
 
 # Postman
 
@@ -850,11 +850,9 @@ Let me know if you encounter any specific issues or errors. I'll guide you throu
 ![Screenshot (291)](https://github.com/user-attachments/assets/dd81d75f-f22f-41a4-9f09-2cd87858a52c)
 ![Screenshot (292)](https://github.com/user-attachments/assets/24336c46-8668-4faa-b401-2e2924ecede9)
 
-<p float="left">
-  <img src="https://github.com/user-attachments/assets/2d142e94-8ef1-4205-ae56-5873a50ed9ae" width="100%" />
-</p>
 
-<h4 src="https://www.linkedin.com/posts/akashdip2001_postman-api-certification-activity-7264947968200368128-MHWG?utm_source=share&utm_medium=member_desktop" align="right">Linked in post</h4>
+[<img src="https://github.com/user-attachments/assets/2d142e94-8ef1-4205-ae56-5873a50ed9ae" width="100%" />](https://www.linkedin.com/posts/akashdip2001_postman-api-certification-activity-7264947968200368128-MHWG?utm_source=share&utm_medium=member_desktop)
+
 
 
 
