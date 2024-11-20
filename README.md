@@ -849,8 +849,8 @@ Let me know if you encounter any specific issues or errors. I'll guide you throu
 ![Screenshot (292)](https://github.com/user-attachments/assets/24336c46-8668-4faa-b401-2e2924ecede9)
 
 <p float="left">
-  <img src="https://github.com/user-attachments/assets/2d142e94-8ef1-4205-ae56-5873a50ed9ae" width="20%" />
-  <img src="https://github.com/user-attachments/assets/3d0e35e2-bcca-4042-a6c7-11380c5729bb" width="80%" />
+  <img src="https://github.com/user-attachments/assets/2d142e94-8ef1-4205-ae56-5873a50ed9ae" width="80%" />
+  <img src="https://github.com/user-attachments/assets/3d0e35e2-bcca-4042-a6c7-11380c5729bb" width="20%" />
 </p>
 
 | [Linked in post](https://www.linkedin.com/posts/akashdip2001_postman-api-certification-activity-7264947968200368128-MHWG?utm_source=share&utm_medium=member_desktop) |
