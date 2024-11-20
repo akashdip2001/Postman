@@ -1,4 +1,4 @@
-# Postman
+![Screenshot (270)](https://github.com/user-attachments/assets/e2f566f7-afc3-466d-8aa8-2e13a2cc6df5)# Postman
 
 # **Chapter 1: Your First API Request – *Getting Books from the Library API***  
 
@@ -596,4 +596,155 @@ You’ve successfully updated the book's `checkedOut` status to true. The librar
 
 ### Outcome
 The book has been successfully deleted from the library database. Trying to delete it again confirms its absence. Another step mastered in managing a library database through APIs! 😊 
+
+---
+
+# **Skillcheck**
+
+Here’s a step-by-step guide to help you successfully complete all tasks in this skill check and pass the test.
+
+---
+
+### **[Task 1] Make the Request**
+1. **Create a Request**: 
+   - Name your request **"skill check"**.
+   - Place it under the **delete a book** request in your collection.
+
+2. **Set Endpoint**:  
+   Use the POST method with the endpoint:  
+   ```
+   https://postman-echo.com/post
+   ```
+![Screenshot (268)](https://github.com/user-attachments/assets/ddc35ad1-d80e-4d23-98e5-eeba3ff754ba)
+![Screenshot (269)](https://github.com/user-attachments/assets/4d9ba5dd-9ca4-4232-a9aa-32d923299091)
+
+---
+
+### **[Task 2] Add a Query Parameter**
+1. **Add a Query Parameter**:
+   - Go to the **Params** tab.
+   - Add the query parameter:
+     - **Key**: `movieName`
+     - **Value**: Your favorite movie (e.g., `Interstellar`).
+
+![Screenshot (270)](https://github.com/user-attachments/assets/5767546d-a3d2-4cfe-97c4-134a37d0800f)
+![Screenshot (271)](https://github.com/user-attachments/assets/874697b1-15f7-4702-9aa9-811088d33433)
+
+---
+
+### **[Task 3] Use a Base URL Variable**
+1. **Create a Collection Variable**:
+   - Go to the **Variables** tab of your collection.
+   - Add a variable:
+     - **Key**: `skillcheckBaseUrl`
+     - **Initial Value**: `https://postman-echo.com`
+     - **Current Value**: `https://postman-echo.com`
+
+2. **Replace the Base URL**:
+   - Change the request URL to:  
+     ```
+     {{skillcheckBaseUrl}}/post
+     ```
+
+![Screenshot (272)](https://github.com/user-attachments/assets/17c3515e-3cc3-442b-8430-48f0e331a00d)
+![Screenshot (273)](https://github.com/user-attachments/assets/89778b4a-4a05-4615-965b-ba073a5524cc)
+
+---
+
+### **[Task 4] Use API Key Authorization**
+1. **Set Authorization**:
+   - Go to the **Authorization** tab of the "skill check" request.
+   - Choose **API Key** as the authorization type.
+   - Configure the API key:
+     - **Key**: `student-expert`
+     - **Value**: `skillcheck`
+     - **Add To**: `Header`
+
+![Screenshot (274)](https://github.com/user-attachments/assets/e9c3ee49-0914-4c19-990c-7f7b17f5d410)
+![Screenshot (275)](https://github.com/user-attachments/assets/d30b2733-69b5-4761-935d-3ffe5ed3eb08)
+
+---
+
+### **[Task 5] Add a JSON Body with `actorName`**
+1. **Add a Body**:
+   - Go to the **Body** tab.
+   - Select **raw** and choose **JSON** from the dropdown.
+   - Add the following JSON:
+     ```json
+     {
+        "actorName": "<actor_name>"
+      }
+     ```
+
+2. **Send the Request**:
+   - Hit **Send** and ensure you get a successful response (e.g., status `200 OK`).
+
+![Screenshot (276)](https://github.com/user-attachments/assets/27129e7b-2495-4932-b058-f519e4ae4347)
+![Screenshot (277)](https://github.com/user-attachments/assets/844b1ef3-a4a4-4aef-80f8-c225a3e2f338)
+
+---
+
+### **[Task 6] Set a Collection Variable Using Post-Response Script**
+1. **Write the Post-Response Script**:
+   - Go to the **Tests** tab of the "skill check" request.
+   - Add the following script:
+     ```javascript
+     // Parse the JSON response
+     var responseJson = pm.response.json();
+
+     // Extract the actorName from the response
+     var actorName = responseJson.data.actorName || responseJson.actorName;
+
+     // Set the actorName as a collection variable
+     pm.collectionVariables.set("favoriteActor", actorName);
+
+     // Log to confirm
+     console.log("favoriteActor set to: " + actorName);
+     ```
+
+![Screenshot (278)](https://github.com/user-attachments/assets/6c07f2be-41cd-48de-961d-3c42e43ff99e)
+
+2. **Test the Script**:
+   - Send the request again.
+   - Go to the **Collection Variables** tab in Postman to confirm that the variable `favoriteActor` is set correctly (e.g., `Matthew McConaughey`).
+
+![Screenshot (279)](https://github.com/user-attachments/assets/8b71e9be-213a-4265-b5af-05a9f9a77e51)
+
+---
+
+### **Test Your Collection Locally**
+1. **Check the Collection Order**:
+   - Ensure the requests in your **Postman Library API v2 collection** are in the correct order:
+     1. Get all books
+     2. Get a single book
+     3. Add a book
+     4. Update a book
+     5. Delete a book
+     6. Skill check
+
+2. **Run the Collection Test**:
+   - Go to the **Final Check** request in the "Collection Test" collection.
+   - Send the request.
+
+3. **Check Test Results**:
+   - Go to the **Test Results** tab in the response.
+   - Confirm that all tests pass (e.g., `Test Results (28/28)`).
+
+---
+
+### **Troubleshooting Tips**
+- If some tests fail:
+  - Read the test messages carefully to understand what needs fixing.
+  - Verify query parameters, variables, body content, and script logic.
+  - Ensure your requests are in the correct order.
+
+- If everything is correct, save the collection and retry.
+
+---
+
+### **Final Step: Submission**
+After passing all tests, submit your collection following the course instructions to claim your badge!
+
+Let me know if you encounter any issues or need further guidance!
+
 
