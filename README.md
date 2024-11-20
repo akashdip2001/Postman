@@ -839,3 +839,20 @@ The variable `{{submission}}` must already contain a **public JSON link** to you
 
 Let me know if you encounter any specific issues or errors. I'll guide you through!
 
+---
+
+![Screenshot (287)](https://github.com/user-attachments/assets/520ff4c0-1895-4109-9d11-8eee14782e06)
+![Screenshot (288)](https://github.com/user-attachments/assets/335679c0-e884-411a-9cd5-aec4c29b19db)
+![Screenshot (289)](https://github.com/user-attachments/assets/64142f08-204c-42d7-a354-0b54b0b056d1)
+![Screenshot (290)](https://github.com/user-attachments/assets/be137aa2-0ea7-4e58-9415-0be1f773d5e7)
+![Screenshot (291)](https://github.com/user-attachments/assets/dd81d75f-f22f-41a4-9f09-2cd87858a52c)
+![Screenshot (292)](https://github.com/user-attachments/assets/24336c46-8668-4faa-b401-2e2924ecede9)
+
+<p float="left">
+  <img src="https://github.com/user-attachments/assets/2d142e94-8ef1-4205-ae56-5873a50ed9ae" width="20%" />
+  <img src="https://github.com/user-attachments/assets/3d0e35e2-bcca-4042-a6c7-11380c5729bb" width="80%" />
+</p>
+
+| [Linked in post](https://www.linkedin.com/posts/akashdip2001_postman-api-certification-activity-7264947968200368128-MHWG?utm_source=share&utm_medium=member_desktop) |
+
+
