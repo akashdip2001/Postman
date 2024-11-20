@@ -495,4 +495,63 @@ With this automation in place, you’re ready to use the stored `id` variable in
 8. **Celebrate Your Success**  
    - Once you achieve **Test Results: 16/16**, you've successfully completed the halfway milestone! 🎉  
 
-Let me know if you encounter any specific errors, and I’ll guide you through fixing them! 😊
+---
+
+# **Chapter 5: PATCH and DELETE – *Task: Checkout your book***  
+
+### Steps to Checkout a Book Using the PATCH Method
+
+1. **Create the "checkout a book" Request**  
+   - In your **Postman Library API v2** collection:  
+     - Hover over the collection name, click the **three dots**, and select **Add Request**.  
+     - Name this new request **"checkout a book"**.
+
+![Screenshot (260)](https://github.com/user-attachments/assets/f4a9d5b9-a2bd-4d85-99e2-119519669342)
+
+2. **Configure the Request**  
+   - **Request Method**: Set it to **PATCH**.  
+   - **Request URL**: Enter the following:  
+     ```text
+     {{baseUrl}}/books/:id
+     ```  
+   - Replace `:id` with `{{id}}`. This dynamically uses the value of the `id` collection variable set during the "add a book" request.
+
+![Screenshot (261)](https://github.com/user-attachments/assets/b5926066-84c8-4535-8a18-5b385865b6f9)
+
+3. **Update the Body with JSON**  
+   - Go to the **Body** tab and select:  
+     - **raw** as the input type.  
+     - **JSON** from the format dropdown.  
+   - Add the following JSON data:  
+     ```json
+     { 
+       "checkedOut": true 
+     }
+     ```
+
+![Screenshot (262)](https://github.com/user-attachments/assets/8b1fc267-a11a-4594-a079-9ce01ff40053)
+
+4. **Ensure Authorization is Properly Set**  
+   - The **Authorization** tab should be set to **Inherit from parent**.  
+   - This will automatically use the API Key added at the collection level.
+
+5. **Save and Send the Request**  
+   - Click **Save** to save the request.  
+   - Hit **Send** to make the PATCH request.  
+
+6. **Verify the Response**  
+   - If successful, you will receive a **200 OK** status code.  
+   - The response body will include the updated details of your book, with the `checkedOut` property set to `true`.  
+
+![Screenshot (263)](https://github.com/user-attachments/assets/7a258a65-23c1-4a1a-891f-d96d993801ad)
+
+7. **Check the Updated Book Data Using the "get book by id" Request**  
+   - Open your **"get book by id"** request.  
+   - Ensure the `id` path variable is set to `{{id}}`.  
+   - Save and Send the request.  
+   - You should now see the updated book data, confirming that the `checkedOut` property is `true`.  
+
+### Outcome
+You’ve successfully updated the book's `checkedOut` status to true. The library's database now reflects that the book is checked out! 😊 
+
+
