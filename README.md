@@ -270,7 +270,7 @@ This chapter felt like adding a personal favorite book to the shelves of an ever
 
 ![Screenshot (238)](https://github.com/user-attachments/assets/e82661d2-1076-48c9-85dd-18777e7b6e74)
 
-### Give Auto on full Folder
+### Give Auto on full Folder - **collection level Authorization**
 
 ![Screenshot (239)](https://github.com/user-attachments/assets/fdb7f4ca-d3f6-4555-95f1-7af9a1191ef1)
 ![Screenshot (240)](https://github.com/user-attachments/assets/6802e9e8-f12c-4f5e-aee6-a88e6e2ec311)
@@ -435,3 +435,64 @@ You can now use `{{id}}` in subsequent requests within the same collection. For 
 
 ### **Next Steps**
 With this automation in place, you’re ready to use the stored `id` variable in future tasks like updating, deleting, or checking out the book. Keep going—you’re doing great! 😊
+
+---
+---
+
+## Halfway Test
+### Steps to Complete the Halfway Test for Your Collection
+
+1. **Fork the "Collection Test" into Your Workspace**  
+   - Open the provided link for the "Collection Test" collection.  
+   - Hover over the "Collection Test" collection name, click the **three dots**, and select **Create a Fork**.  
+   - Choose your workspace, e.g., "Postman API Fundamentals Student Expert," as the destination.  
+   - Click **Fork Collection**.
+
+![Screenshot (252)](https://github.com/user-attachments/assets/80be23c1-68b1-4440-80c4-53d37e520b79)
+![Screenshot (253)](https://github.com/user-attachments/assets/dcb70c9d-2f52-4076-9a6e-234242827562)
+
+2. **Generate an API Key for Your "Postman Library API v2" Collection**  
+   - Navigate to your **Postman Library API v2** collection.  
+   - Click **View more actions** (three dots) > **Share** > **Via API**.  
+   - Click **Generate New Key**, then **Copy** the generated link.
+
+![Screenshot (254)](https://github.com/user-attachments/assets/ccd8c0a8-30f9-4de9-8eb2-87b7f413a154)
+![Screenshot (255)](https://github.com/user-attachments/assets/79ef837e-a84b-4278-bf94-1c54e331119e)
+
+3. **Set the Submission Variable in the Forked "Collection Test"**  
+   - Go to the forked **"Collection Test"** collection.  
+   - Open the **Variables** tab.  
+   - Locate the variable named `submission`. Paste the API key link you copied earlier into both the **Initial Value** and **Current Value** columns.  
+   - Click **Save** to persist the changes.
+
+![Screenshot (256)](https://github.com/user-attachments/assets/233d9e44-2060-4001-bac1-b6a6a50db63b)
+![Screenshot (257)](https://github.com/user-attachments/assets/39b39cd8-6b93-4c1b-ad62-bde27be7c026)
+
+4. **Send the Halfway Test Request**  
+   - In the **"Collection Test"** collection, find the request titled **Halfway Test**.  
+   - Send the request by clicking the **Send** button.
+
+5. **Check the Test Results Tab**  
+   - If everything is correct, you will see:  
+     **Test Results: 16/16**  
+   - If some tests fail (e.g., **Test Results: 14/16**), refer to the **Test Messages** in the response. They provide hints about what needs fixing.
+
+![Screenshot (259)](https://github.com/user-attachments/assets/56e53e52-8c28-4c68-b6f3-57b9be8df9a3)
+
+6. **Resolve Any Errors**  
+   - **Test Messages** will specify what’s wrong with your collection. Use these messages as a guide to fix the errors.  
+   - Go back to your **Postman Library API v2** collection and:  
+     - Ensure all requests are correctly configured as per the earlier lessons.  
+     - Verify your scripts, query parameters, and headers are properly set.  
+   - Save any updates to your collection, then re-send the **Halfway Test** request.
+
+<img width="870" alt="6n2s7wufz2wz5S" src="https://github.com/user-attachments/assets/3c2f92df-5752-46f1-b115-541bd8f9c0f9">
+
+7. **Additional Help**  
+   - If you're stuck, revisit previous lessons to double-check your implementation.  
+   - Join the [Discord Community](https://discord.com/channels/831210428314157076/1268565927599800423) for support or FAQs.
+
+8. **Celebrate Your Success**  
+   - Once you achieve **Test Results: 16/16**, you've successfully completed the halfway milestone! 🎉  
+
+Let me know if you encounter any specific errors, and I’ll guide you through fixing them! 😊
