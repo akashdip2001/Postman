@@ -554,4 +554,46 @@ With this automation in place, you’re ready to use the stored `id` variable in
 ### Outcome
 You’ve successfully updated the book's `checkedOut` status to true. The library's database now reflects that the book is checked out! 😊 
 
+---
+
+### Steps to Delete a Book Using the DELETE Method
+
+1. **Create the "delete a book" Request**  
+   - In your **Postman Library API v2** collection:  
+     - Hover over the collection name, click the **three dots**, and select **Add Request**.  
+     - Name the new request **"delete a book"**.
+
+2. **Configure the DELETE Request**  
+   - **Request Method**: Set to **DELETE**.  
+   - **Request URL**: Enter:  
+     ```text
+     {{baseUrl}}/books/:id
+     ```  
+   - Replace `:id` with `{{id}}`. This uses the `id` collection variable dynamically set during the "add a book" request.
+
+3. **Check Path Variable**  
+   - In the **Params** tab, ensure the `id` path variable is set to `{{id}}`.
+
+4. **Save and Send the Request**  
+   - Click **Save** to save the request.  
+   - Hit **Send** to delete the book.  
+
+5. **Verify the Response**  
+   - A **204 No Content** status code indicates the server successfully deleted the book.  
+   - No response body is expected.
+
+![Screenshot (265)](https://github.com/user-attachments/assets/64b3ef25-81f2-4bb1-b95d-965905f2f1f9)
+![Screenshot (266)](https://github.com/user-attachments/assets/ba42028c-2096-4721-9c3d-4001e1745f89)
+
+6. **Test If the Book Is Really Deleted**  
+   - Without making any changes, **Send the DELETE request again**.  
+   - You will get a **404 Not Found** status code.  
+   - This confirms that the book no longer exists in the database.
+
+![Screenshot (267)](https://github.com/user-attachments/assets/e7e1d9ac-7fea-4b9b-a69a-d068d0eea308)
+
+---
+
+### Outcome
+The book has been successfully deleted from the library database. Trying to delete it again confirms its absence. Another step mastered in managing a library database through APIs! 😊 
 
