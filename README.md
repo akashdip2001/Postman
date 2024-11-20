@@ -809,7 +809,7 @@ The variable `{{submission}}` must already contain a **public JSON link** to you
    - If successful, you’ll see a success message, and this lesson will automatically be marked as complete. 🎉
    - If you see a `424` error, follow the troubleshooting steps below.
 
-![Screenshot (285)](https://github.com/user-attachments/assets/acc0d1c5-1b63-4323-8ca8-b6653b5b8e26)
+![Screenshot (285)](https://github.com/user-attachments/assets/94ab22d4-463e-4063-8ae8-a16283677c63)
 
 ---
 
