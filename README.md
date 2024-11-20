@@ -138,7 +138,7 @@ This chapter felt like opening a treasure chest of information—my first API re
 | [View All GET Requests](get%20books.json) |
 | --- |
 
----
+<img src="https://github.com/akashdip2001/college-final-year-project/blob/main/img/colour_line.png">
 
 # **Chapter 2: Request Parameters – *Using Query Parameters to Filter Results***  
 ## Variables in Postman
@@ -211,7 +211,7 @@ Filtering data by genre was like flipping through the pages of a library catalog
 ![Screenshot (232)](https://github.com/user-attachments/assets/e4fa7536-535b-4860-917d-2618e86efc98)
 ![Screenshot (233)](https://github.com/user-attachments/assets/f58804b8-e201-41a4-b6a0-d0f31500057e)
 
----
+<img src="https://github.com/akashdip2001/college-final-year-project/blob/main/img/colour_line.png">
 
 # **Chapter 3: Sending Data with POST – *Adding a Book to the Library***  
 
@@ -278,7 +278,7 @@ This chapter felt like adding a personal favorite book to the shelves of an ever
 ![Screenshot (240)](https://github.com/user-attachments/assets/6802e9e8-f12c-4f5e-aee6-a88e6e2ec311)
 ![Screenshot (241)](https://github.com/user-attachments/assets/cb726d8b-6bb3-44aa-8f4c-8d6edc73fbbd)
 
----
+<img src="https://github.com/akashdip2001/college-final-year-project/blob/main/img/colour_line.png">
 
 # **Chapter 4: Introduction to Variables and Scripting – *Logging Data from the API***  
 
@@ -376,8 +376,7 @@ It was rewarding to see how we could capture data programmatically—like being 
 - Use this `id` in future operations, like retrieving, updating, or deleting this specific book.  
 - Continue exploring how Postman handles variables and scripting for automating these tasks! 😊
 
----
----
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
 
 Here’s a summary of how you can **grab the new book ID** and save it as a variable:
 
@@ -438,8 +437,7 @@ You can now use `{{id}}` in subsequent requests within the same collection. For 
 ### **Next Steps**
 With this automation in place, you’re ready to use the stored `id` variable in future tasks like updating, deleting, or checking out the book. Keep going—you’re doing great! 😊
 
----
----
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
 
 ## Halfway Test
 ### Steps to Complete the Halfway Test for Your Collection
@@ -497,7 +495,7 @@ With this automation in place, you’re ready to use the stored `id` variable in
 8. **Celebrate Your Success**  
    - Once you achieve **Test Results: 16/16**, you've successfully completed the halfway milestone! 🎉  
 
----
+<img src="https://github.com/akashdip2001/college-final-year-project/blob/main/img/colour_line.png">
 
 # **Chapter 5: PATCH and DELETE – *Task: Checkout your book***  
 
@@ -747,7 +745,7 @@ Here’s a step-by-step guide to help you successfully complete all tasks in thi
 ### **Final Step: Submission**
 After passing all tests, submit your collection following the course instructions to claim your badge!
 
----
+<img src="https://github.com/akashdip2001/college-final-year-project/blob/main/img/colour_line.png">
 
 # ✅ successfully submit your Postman collection:
 
@@ -841,7 +839,7 @@ The variable `{{submission}}` must already contain a **public JSON link** to you
 
 Let me know if you encounter any specific issues or errors. I'll guide you through!
 
----
+<img src="https://github.com/akashdip2001/college-final-year-project/blob/main/img/colour_line.png">
 
 ![Screenshot (287)](https://github.com/user-attachments/assets/520ff4c0-1895-4109-9d11-8eee14782e06)
 ![Screenshot (288)](https://github.com/user-attachments/assets/335679c0-e884-411a-9cd5-aec4c29b19db)
@@ -850,6 +848,7 @@ Let me know if you encounter any specific issues or errors. I'll guide you throu
 ![Screenshot (291)](https://github.com/user-attachments/assets/dd81d75f-f22f-41a4-9f09-2cd87858a52c)
 ![Screenshot (292)](https://github.com/user-attachments/assets/24336c46-8668-4faa-b401-2e2924ecede9)
 
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
 
 [<img src="https://github.com/user-attachments/assets/2d142e94-8ef1-4205-ae56-5873a50ed9ae" width="100%" />](https://www.linkedin.com/posts/akashdip2001_postman-api-certification-activity-7264947968200368128-MHWG?utm_source=share&utm_medium=member_desktop)
 
