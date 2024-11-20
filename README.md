@@ -745,6 +745,96 @@ Here’s a step-by-step guide to help you successfully complete all tasks in thi
 ### **Final Step: Submission**
 After passing all tests, submit your collection following the course instructions to claim your badge!
 
-Let me know if you encounter any issues or need further guidance!
+---
 
+# ✅ successfully submit your Postman collection:
+
+---
+
+### **Step 1: Verify Your Collection**
+Ensure your collection has **exactly 7 requests in this order**:
+1. **Get books**
+2. **Get fiction books**
+3. **Get book by ID**
+4. **Add a book**
+5. **Checkout a book**
+6. **Delete a book**
+7. **Skillcheck**
+
+If the requests are out of order, you can reorder them by dragging and dropping them in the collection tab.
+
+![Screenshot (280)](https://github.com/user-attachments/assets/034026a0-202c-465b-ba3b-ac3932f64d1f)
+![Screenshot (281)](https://github.com/user-attachments/assets/d10c4343-c066-4a9b-b5b1-deae8f6dc4ad)
+![Screenshot (282)](https://github.com/user-attachments/assets/46c5a76b-d8c4-4910-9d59-6ed49af855b0)
+![Screenshot (283)](https://github.com/user-attachments/assets/adf14ae9-4f74-401b-9db3-e6746310b06c)
+
+---
+
+### **Step 2: Check the Submission Variable**
+The variable `{{submission}}` must already contain a **public JSON link** to your Postman Library API v2 collection. To confirm:
+1. Go to your collection.
+2. Click the **three dots (⋮)** next to the collection name.
+3. Select **Share Collection**.
+4. Ensure **Enable Sharing** is turned ON, and copy the link.
+5. Check that this link is set as the value of the `{{submission}}` variable in your environment.
+
+---
+
+### **Step 3: Update the "Submit" Request**
+1. **Navigate to the "Submit" Request**:
+   - Go to the **"Collection Test"** collection and locate the `submit` request.
+2. **Set the Request Method and URL**:
+   - Method: `POST`
+   - URL: `https://lesson-completion.postmanlabs.com/submit`
+3. **Add the Raw JSON Body**:
+   - Go to the **Body** tab.
+   - Select **raw** and choose **JSON** format from the dropdown.
+   - Paste the following JSON:
+     ```json
+     {
+       "email": "akashdip.mahapatra.21@aot.edu.in",
+       "postmanCollectionJsonUrl": "{{submission}}",
+       "publishedCourseId": "2q2jokzsn62y8",
+       "lessonId": "go6mgkytvk8u"
+     }
+     ```
+4. **Save the Request**:
+   - Click the **Save** button (💾).
+
+---
+
+### **Step 4: Submit the Request**
+1. Send the request by clicking the **Send** button.
+2. Check the response:
+   - If successful, you’ll see a success message, and this lesson will automatically be marked as complete. 🎉
+   - If you see a `424` error, follow the troubleshooting steps below.
+
+![Screenshot (285)](https://github.com/user-attachments/assets/acc0d1c5-1b63-4323-8ca8-b6653b5b8e26)
+
+---
+
+### **Step 5: Troubleshooting Common Errors**
+#### **If You Get a 424 Error**
+1. Read the error message in the response. It will give hints about what went wrong.
+2. Common fixes:
+   - Ensure the requests in your collection are in the correct order.
+   - Verify the request body for the "Skillcheck" request and ensure:
+     - The query parameter `movieName` is correctly added.
+     - The `actorName` is correctly sent in the JSON body.
+   - Double-check the `post-response script` in the Skillcheck request.
+   - Make sure all requests in the collection return the expected responses.
+
+3. Save your changes and re-submit.
+
+#### **If You Get a 500-Level Error**
+- Wait for 5 minutes and try submitting again.
+- If the issue persists, re-check your submission link or regenerate it by re-sharing your collection.
+
+---
+
+### **Step 6: Completion**
+- After passing all tests, refresh the course page.
+- If marked complete, proceed to claim your **Postman Student Expert badge**!
+
+Let me know if you encounter any specific issues or errors. I'll guide you through!
 
