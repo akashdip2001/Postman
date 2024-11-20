@@ -810,6 +810,7 @@ The variable `{{submission}}` must already contain a **public JSON link** to you
    - If you see a `424` error, follow the troubleshooting steps below.
 
 ![Screenshot (285)](https://github.com/user-attachments/assets/94ab22d4-463e-4063-8ae8-a16283677c63)
+![Screenshot (286)](https://github.com/user-attachments/assets/f56ee10f-4041-4b85-b671-4388a26e8625)
 
 ---
 
